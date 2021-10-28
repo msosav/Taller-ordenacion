@@ -9,6 +9,6 @@ def duplicados(lista):
 
 def main():
     lista = [4,7,11,4,9,5,11,7,3,5,4]
-    print(duplicados(lista))
+    print("La lista sin los elementos duplicados es", duplicados(lista))
 
 main()
