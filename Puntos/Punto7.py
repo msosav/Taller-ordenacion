@@ -1,3 +1,5 @@
+import timeit
+
 def negativos(lista):
     listaNueva = []
 
@@ -8,8 +10,13 @@ def negativos(lista):
     return listaNueva
 
 def main():
-    lista = [-3,-1,0,5,4,-15]
+    start = timeit.timeit()
+
+    lista = [-3,-1,-15,-16,-17,-15]
 
     print("La lista sin los números negativos es", negativos(lista))
+
+    print(start)
+
 
 main()
